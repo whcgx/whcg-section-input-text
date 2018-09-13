@@ -6,12 +6,11 @@
   "module": "dist/index.es6.js",
   "scripts": {
     "build": "rollup -c"
- },
+  },
   "files": [
     "dist",
     "theme"
- ],
-
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/whcgx/whcg-section-input-text.git"
