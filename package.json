@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/whcgx/whcg-section-input-text/issues"
   },
-  "homepage": "https://github.com/whcgx/whcg-section-input-text#readme"
+  "homepage": "https://github.com/whcgx/whcg-section-input-text#readme",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.5",
+    "@whcg/whcg-general-styles": "^1.2.2"
+  }
 }
