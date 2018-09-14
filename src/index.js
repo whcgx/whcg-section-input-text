@@ -1,6 +1,5 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
-//import "@polymer/polymer/lib/elements/custom-style.js";
-import "@whcg/whcg-general-styles/grid.js";
+import '@whcg/whcg-general-styles/grid.js';
 
 export class WhcgSectionInputText extends PolymerElement {
 
@@ -8,79 +7,43 @@ export class WhcgSectionInputText extends PolymerElement {
     return html`
     <style include = "style-element-grid">
       
-        .categoryinputsection {
+        .section {
             padding-top: 130px;
         }
 
-        .categoryinputsection-headline {
+        .headline {
             padding-top: 32px;
             font-family: var(--parmaco-font-family);
             font-size: var(--parmaco-font-size-xl);
             color: var(--parmaco-base-color-100pct);
             
         }
-        .categoryinputsection-content {
+        .content {
         }
 
-        .categoryinputsection-content--withchartbottom {
-            grid-template-rows: auto 350px;
+        .content-inputbox {
         }
 
-        .categoryinputsection-content--withcharttop {
-            grid-template-rows: 350px auto;
-        }
-
-        .categoryinputsection-content-text{
+        .content-text{
             padding-top: 33px;
             font-family: var(--parmaco-font-family);
             font-size: var(--parmaco-font-size-s);
             font-weight: var(--parmaco-font-weight-normal);
             color: var(--parmaco-base-color-100pct);
         }
-
-        .categoryinputsection-content-text--top{
-            padding-top: 33px;
-            font-family: var(--parmaco-font-family);
-            font-size: var(--parmaco-font-size-s);
-            font-weight: var(--parmaco-font-weight-normal);
-            color: var(--parmaco-base-color-100pct);
-        }
-
-        .categoryinputsection-content-inputbox {
-        }
-
-        .categoryinputsection-content-inputboxrow--bottom {
-            padding-top: 33px;
-        }
-
-        .categoryinputsection-content-chart {
-            padding-top: 33px;
-        }
-
-        .categoryinputsection-content-chart--bottom {
-            padding-top: 33px;
-        }
-
-        .categoryinputsection-content-chart--top {
-            padding-top: 33px;
-        }
-
-        .gridcontent-right {
-            justify-self: end;
-        }
-
-
 
     </style>
 
 
-    <div class="grid-12 categoryinputsection">
-        <div class="col2span2 categoryinputsection-headline"><slot name="title"></slot></div>
-        <div class="col4span8 grid-8 categoryinputsection-content">
-            <div class="col1span3 categoryinputsection-content-inputbox">
+    <div class="grid-12 section">
+        <div class="col2span2 headline">
+            <slot name="title"></slot>
+        </div>
+        <div class="col4span8 grid-8 content">
+            <div class="col1span3 content-inputbox">
                 <slot name="input"></slot>
             </div>
-            <div class="col4span5 categoryinputsection-content-text">
+            <div class="col4span5 content-text">
                 <slot name="text"></slot>
             </div>
         </div>
